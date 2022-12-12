@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".options">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:text="Text color"
+            android:textStyle=""/>
+        <SeekBar
+            android:id="@+id/bar_red"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="255"
+            android:min="0"
+            android:progress="0"
+            android:thumbTint="#FF0000"
+            android:progressTint="#FF0000"/>
+        <SeekBar
+            android:id="@+id/bar_green"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="255"
+            android:min="0"
+            android:progress="0"
+            android:thumbTint="#00FF00"
+            android:progressTint="#00FF00"/>
+        <SeekBar
+            android:id="@+id/bar_blue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="255"
+            android:min="0"
+            android:progress="0"
+            android:thumbTint="#0000FF"
+            android:progressTint="#0000FF"/>
+
+        <Button
+            android:id="@+id/options_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply color"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
